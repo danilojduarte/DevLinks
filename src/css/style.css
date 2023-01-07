@@ -9,6 +9,12 @@ body {
     margin: auto;
 }
 
+#profile {
+    text-align: center;
+}
+
 #profile img {
     border-radius: 50%;
+    width: 112px;
+    border: 1px solid gray;
 }
