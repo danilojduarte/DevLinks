@@ -32,3 +32,14 @@ body * {
 
     margin-top: 8px;
 }
+
+
+/* Links */
+ul {
+    list-style: none;
+}
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
