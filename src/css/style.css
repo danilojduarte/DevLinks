@@ -26,14 +26,17 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 body * {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
 }
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0;
+    padding: 0 24px;
 }
 
 /* Profile */
@@ -90,8 +93,6 @@ body * {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 }
-
-
 
 /* Links */
 ul {
@@ -158,4 +159,15 @@ footer {
     text-align: center;
 
     font-size: 14px;
+}
+
+/* Aplicando media queries */
+@media (min-width: 700px) {
+    :root {
+        --br-url: url(./src/img/BackgroundScreenDark.jpg)
+    }
+
+    .light {
+        --br-url: url(./src/img/BackgroundScreenLight.jpg)
+    }
 }
